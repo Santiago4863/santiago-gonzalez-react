@@ -1,0 +1,14 @@
+.button{
+    width: 20px;
+    height: 20px;
+    margin:0 20px 0 20px;
+}
+.contador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.agregarCarrito{
+    display: flex;
+    flex-direction: column;
+}
