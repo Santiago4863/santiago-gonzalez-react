@@ -1,17 +1,17 @@
-import item from "../data/item";
+import items from "../data/item";
 
 function getItems(){
     return new Promise((resolve)=>{
         setTimeout(()=>{
-            resolve(item)
+            resolve(items)
         }, 300)
         });
 }
-export function getItemsCategory(categoryID){
+export function getItemsCategory(ID){
     return new Promise((resolve, reject)=>{
         setTimeout(()=>{
-            let itemsFound = item.filter((item)=>{
-                return item.category===categoryID
+            let itemsFound = items.filter((item)=>{
+                return item.categoria===ID
             })
             if (itemsFound.length > 0) {
                 resolve(itemsFound)
@@ -22,10 +22,10 @@ export function getItemsCategory(categoryID){
         },300)
     })
 }
-export function getSingleItem(id){
+export function getSingleItem(ID){
     return new Promise((resolve,reject)=>{
         setTimeout(()=>{
-            let itemFound = item.find(itemInArray => itemInArray.id === parseInt(id))
+            let itemFound = items.find(itemInArray => itemInArray.id === parseInt(ID))
                 if(itemFound)
                     resolve(itemFound)
                 else

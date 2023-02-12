@@ -3,6 +3,8 @@ import Navbar from './components/NavBar/NavBar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
+import CartProvider from './context/cartProvider';
+
 
 function App() {
   const styleTitulo={
@@ -13,6 +15,8 @@ function App() {
   return (
     <>
       <BrowserRouter>
+      <CartProvider>
+
         <div className='App-header'>
           <Navbar/>
         </div>
@@ -20,7 +24,7 @@ function App() {
       <Routes>
 
         <Route path='/' element={
-        <div className='Container'>
+          <div className='Container'>
           <ItemListContainer/>
         </div>}/>
 
@@ -37,6 +41,7 @@ function App() {
 
         <Route path='*' element={<h1>404: Recurso no encontrado</h1>}/>
       </Routes>
+          </CartProvider>
       </BrowserRouter>
     </>
   );

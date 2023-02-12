@@ -7,12 +7,12 @@ function Navbar() {
     <>
       
       <nav className='nav'>
-        <Link to="/" className='NombreLogo'><p>TECNOMMERCE</p></Link>
+        <Link to="/" className='NombreLogo'><p>Valkeem</p></Link>
         <ul className='padreLinks'>
           <Link to="/" className='ancorNav'>Inicio</Link>
-          <Link to="/category/smartphones" className='ancorNav'>Celulares</Link>
-          <Link to="/category/laptops" className='ancorNav'>Portatiles</Link>
-          <Link to="/category/fragrances" className='ancorNav'>Fragrancias</Link>
+          <Link to="/categoria/Hombre" className='ancorNav'>Hombre</Link>
+          <Link to="/categoria/Mujer" className='ancorNav'>Mujer</Link>
+          <Link to="/categoria/Niños" className='ancorNav'>Niños</Link>
         </ul>
         <CartWidget/>
       </nav>

@@ -3,6 +3,7 @@ import './ItemListContainer.css'
 import ItemList from './ItemList'
 import getItems, { getItemsCategory } from '../../services/mockService'
 import { useParams } from 'react-router-dom'
+import items from '../../data/item'
 
 
 export default function ItemListContainer() {
@@ -26,11 +27,11 @@ export default function ItemListContainer() {
       
           { items.map(item=>{
             return <ItemList
-            key={item.id}
-            id={item.id} 
-            titleProduct= {item.titleProduct} 
-            imgProduct={item.imgProduct}  
-            priceProduct={item.priceProduct}
+            key={items.id}
+            id={items.id} 
+            titleProduct= {items.titulo} 
+            imgProduct={items.imagen}  
+            priceProduct={items.precio}
           />
           }) }
     </div>

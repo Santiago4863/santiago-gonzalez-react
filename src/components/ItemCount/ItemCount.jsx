@@ -1,7 +1,6 @@
 import React from 'react'
 import './ItemCount.css'
-import item from '../../data/item';
-
+/*
 export default function ItemCount(props) {
     const [count, setCount] = React.useState(1);
     function handleSuma(){
@@ -15,17 +14,67 @@ export default function ItemCount(props) {
     function handleResta(){
       setCount(count-1)
     }
-    function onAddToCart(){
-      console.log("Se agrego al carrito de compras correctamente")
+    
+    return (
+      <div className='agregarCarrito'>
+      <div className='contador'>
+      <button disabled={count===1} onClick={handleResta} className='button'>-</button>
+      <h3>{count}</h3>
+      <button onClick={handleSuma} className='button'>+</button>
+      </div>
+      </div>
+      )
     }
-  return (
-    <div className='agregarCarrito'>
-    <div className='contador'>
-        <button disabled={count===1} onClick={handleResta} className='button'>-</button>
-        <h3>{count}</h3>
-        <button onClick={handleSuma} className='button'>+</button>
-    </div>
-    <button onClick={onAddToCart}>Agregar a Carrito</button>
-    </div>
-  )
+    */
+    
+const ItemCount = ({
+  contador,
+  actualizarValor,
+  stock,
+  getNumeroCualquiera,
+}) => {
+  const numeroCualquiera = 10;
+  const onAdd = () =>{
+    if (stock === contador){
+      return
+    }
+      actualizarValor(contador + 1)
+      getNumeroCualquiera(numeroCualquiera)
+  }
+  const restar = () =>{
+    if(contador === 0){
+      return
+    }
+    actualizarValor(contador - 1)
+  }
+
+return(
+  <div className='agregarCarrito'>
+      <div className='contador'>
+      <button onClick={restar}  className='button'>-</button>
+      <p className='spanContador'>{contador}</p>
+      <button onClick={onAdd} className='button'>+</button>
+      </div>
+      </div>
+)
 }
+
+export default ItemCount
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

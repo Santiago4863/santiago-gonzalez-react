@@ -11,8 +11,8 @@
 .cardUnidad{
     display: flex;
     flex-direction: column;
-    width: 200px;
-    height: 400px;
+    width: 210px;
+    height: 280px;
     align-items:center;
     border: black 0.1px solid;
 }

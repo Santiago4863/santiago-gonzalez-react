@@ -1,4 +1,171 @@
-const items = [{"id":1,
+const items = [
+  {
+    "id":1,
+    "titulo": "Ray-Ban",
+    "imagen": "./img/hombre-1.jpg",
+    "descripcion":"Lentes para hombre",
+    "stock":120,
+    "categoria":"Hombre",
+    "precio": 11000
+},
+{
+    "id": 2,
+    "titulo": "Ray-Ban",
+    "imagen": "./img/hombre-2.jpg",
+    "descripcion":"Lentes para hombre",
+    "stock":120,
+    "categoria":"Hombre",
+    "precio": 10000
+},
+{
+    "id": 3,
+    "titulo": "Ray-Ban",
+    "imagen": "./img/hombre-3.jpg",
+    "descripcion":"Lentes para hombre",
+    "stock":120,
+    "categoria":"Hombre",
+    "precio": 10500
+},
+{
+    "id": 4,
+    "titulo": "Bangue",
+    "imagen": "./img/hombre-4.jpg",
+    "descripcion":"Lentes para hombre",
+    "stock":120,
+    "categoria":"Hombre",
+    "precio": 11500
+},
+{
+    "id": 5,
+    "titulo": "Ray-Ban",
+    "imagen": "/img/hombre-5.jpg",
+    "descripcion":"Lentes para hombre",
+    "stock":120,
+    "categoria":"Hombre",
+    "precio": 9000
+},
+{
+    "id": 6,
+    "titulo": "Bangue",
+    "imagen": "./img/mujer-1.jpg",
+    "descripcion":"Lentes para mujer",
+    "stock":120,
+    "categoria":"Mujer",
+    "precio": 14000
+},
+{
+    "id": 7,
+    "titulo": "Bangue",
+    "imagen": "./img/mujer-2.jpg",
+    "descripcion":"Lentes para mujer",
+    "stock":120,
+    "categoria":"Mujer",
+    "precio": 12000
+},
+{
+    "id": 8,
+    "titulo": "Ray-Ban",
+    "imagen": "./img/mujer-3.jpg",
+    "descripcion":"Lentes para mujer",
+    "stock":120,
+    "categoria":"Mujer",
+    "precio": 13600
+},
+{
+    "id": 9,
+    "titulo": "Bangue",
+    "imagen": "./img/mujer-4.jpg",
+    "descripcion":"Lentes para mujer",
+    "stock":120,
+    "categoria":"Mujer",
+    "precio": 19000
+},
+{
+    "id": 10,
+    "titulo": "Bangue",
+    "imagen": "./img/mujer-5.jpg",
+    "descripcion":"Lentes para mujer",
+    "stock":120,
+    "categoria":"Mujer",
+    "precio": 10000
+},
+{
+    "id": 11,
+    "titulo": "Bangue",
+    "imagen": "./img/mujer-6.jpg",
+    "descripcion":"Lentes para mujer",
+    "stock":120,
+    "categoria":"Mujer",
+    "precio": 8000
+},
+{
+    "id": 12,
+    "titulo": "Ray-Ban",
+    "imagen": "./img/mujer-7.jpg",
+    "descripcion":"Lentes para mujer",
+    "stock":120,
+    "categoria":"Mujer",
+    "precio": 11000
+},
+{
+    "id": 13,
+    "titulo": "Bangue",
+    "imagen": "./img/mujer-8.jpg",
+    "descripcion":"Lentes para mujer",
+    "stock":120,
+    "categoria":"Mujer",
+    "precio": 13800
+},
+{
+    "id": 14,
+    "titulo": "Rip Curl",
+    "imagen": "./img/niños-1.jpg",
+    "descripcion":"Lentes para niños",
+    "stock":120,
+    "categoria":"Niños",
+    "precio": 7000
+},
+{
+    "id": 15,
+    "titulo": "Rip Curl",
+    "imagen": "./img/niños-2.jpg",
+    "descripcion":"Lentes para niños",
+    "stock":120,
+    "categoria":"Niños",
+    "precio": 8000
+},
+{
+    "id": 16,
+    "titulo": "Bangue",
+    "imagen": "/img/niños-3.jpg",
+    "descripcion":"Lentes para niños",
+    "stock":120,
+    "categoria":"Niños",
+    "precio": 6800
+},
+{
+    "id": 17,
+    "titulo": "Bangue",
+    "imagen": "img/niños-4.jpg",
+    "descripcion":"Lentes para niños",
+    "stock":120,
+    "categoria":"Niños",
+    "precio": 8300
+},
+
+{
+    "id": 18,
+    "titulo": "Rip Curl",
+    "imagen": "../img/niños-estuche.jpg",
+    "descripcion":"estuches para niños",
+    "stock":120,
+    "categoria":"Niños",
+    "precio": 2000
+}
+]
+/*
+
+{ "id":1,
 "titleProduct":"iPhone 9",
 "descriptionProduct":"An apple mobile which is nothing like apple",
 "priceProduct":549,
@@ -76,6 +243,6 @@ const items = [{"id":1,
 {"id":30,"titleProduct":"Key Holder","descriptionProduct":"Attractive DesignMetallic materialFour key hooksReliable & DurablePremium Quality","priceProduct":30,"discountPercentage":2.92,"rating":4.92,"stock":54,"brand":"Golden","category":"home-decoration",
 "thumbnail":"https://i.dummyjson.com/data/products/30/thumbnail.jpg",
 "imgProduct":"https://i.dummyjson.com/data/products/30/1.jpg"}]
-  
+  */
   
   export default items;
