@@ -2,7 +2,7 @@ const items = [
   {
     "id":1,
     "titulo": "Ray-Ban",
-    "imagen": "./img/hombre-1.jpg",
+    "imagen": "/img/hombre-1.jpg",
     "descripcion":"Lentes para hombre",
     "stock":120,
     "categoria":"Hombre",
@@ -11,7 +11,7 @@ const items = [
 {
     "id": 2,
     "titulo": "Ray-Ban",
-    "imagen": "./img/hombre-2.jpg",
+    "imagen": "/img/hombre-2.jpg",
     "descripcion":"Lentes para hombre",
     "stock":120,
     "categoria":"Hombre",
@@ -20,7 +20,7 @@ const items = [
 {
     "id": 3,
     "titulo": "Ray-Ban",
-    "imagen": "./img/hombre-3.jpg",
+    "imagen": "/img/hombre-3.jpg",
     "descripcion":"Lentes para hombre",
     "stock":120,
     "categoria":"Hombre",
@@ -29,7 +29,7 @@ const items = [
 {
     "id": 4,
     "titulo": "Bangue",
-    "imagen": "./img/hombre-4.jpg",
+    "imagen": "/img/hombre-4.jpg",
     "descripcion":"Lentes para hombre",
     "stock":120,
     "categoria":"Hombre",
@@ -47,7 +47,7 @@ const items = [
 {
     "id": 6,
     "titulo": "Bangue",
-    "imagen": "./img/mujer-1.jpg",
+    "imagen": "/img/mujer-1.jpg",
     "descripcion":"Lentes para mujer",
     "stock":120,
     "categoria":"Mujer",
@@ -56,7 +56,7 @@ const items = [
 {
     "id": 7,
     "titulo": "Bangue",
-    "imagen": "./img/mujer-2.jpg",
+    "imagen": "/img/mujer-2.jpg",
     "descripcion":"Lentes para mujer",
     "stock":120,
     "categoria":"Mujer",
@@ -65,7 +65,7 @@ const items = [
 {
     "id": 8,
     "titulo": "Ray-Ban",
-    "imagen": "./img/mujer-3.jpg",
+    "imagen": "/img/mujer-3.jpg",
     "descripcion":"Lentes para mujer",
     "stock":120,
     "categoria":"Mujer",
@@ -74,7 +74,7 @@ const items = [
 {
     "id": 9,
     "titulo": "Bangue",
-    "imagen": "./img/mujer-4.jpg",
+    "imagen": "/img/mujer-4.jpg",
     "descripcion":"Lentes para mujer",
     "stock":120,
     "categoria":"Mujer",
@@ -83,7 +83,7 @@ const items = [
 {
     "id": 10,
     "titulo": "Bangue",
-    "imagen": "./img/mujer-5.jpg",
+    "imagen": "/img/mujer-5.jpg",
     "descripcion":"Lentes para mujer",
     "stock":120,
     "categoria":"Mujer",
@@ -92,7 +92,7 @@ const items = [
 {
     "id": 11,
     "titulo": "Bangue",
-    "imagen": "./img/mujer-6.jpg",
+    "imagen": "/img/mujer-6.jpg",
     "descripcion":"Lentes para mujer",
     "stock":120,
     "categoria":"Mujer",
@@ -101,7 +101,7 @@ const items = [
 {
     "id": 12,
     "titulo": "Ray-Ban",
-    "imagen": "./img/mujer-7.jpg",
+    "imagen": "/img/mujer-7.jpg",
     "descripcion":"Lentes para mujer",
     "stock":120,
     "categoria":"Mujer",
@@ -110,7 +110,7 @@ const items = [
 {
     "id": 13,
     "titulo": "Bangue",
-    "imagen": "./img/mujer-8.jpg",
+    "imagen": "/img/mujer-8.jpg",
     "descripcion":"Lentes para mujer",
     "stock":120,
     "categoria":"Mujer",
@@ -119,7 +119,7 @@ const items = [
 {
     "id": 14,
     "titulo": "Rip Curl",
-    "imagen": "./img/niños-1.jpg",
+    "imagen": "/img/niños-1.jpg",
     "descripcion":"Lentes para niños",
     "stock":120,
     "categoria":"Niños",
@@ -128,7 +128,7 @@ const items = [
 {
     "id": 15,
     "titulo": "Rip Curl",
-    "imagen": "./img/niños-2.jpg",
+    "imagen": "/img/niños-2.jpg",
     "descripcion":"Lentes para niños",
     "stock":120,
     "categoria":"Niños",
@@ -146,7 +146,7 @@ const items = [
 {
     "id": 17,
     "titulo": "Bangue",
-    "imagen": "img/niños-4.jpg",
+    "imagen": "/img/niños-4.jpg",
     "descripcion":"Lentes para niños",
     "stock":120,
     "categoria":"Niños",
@@ -156,7 +156,7 @@ const items = [
 {
     "id": 18,
     "titulo": "Rip Curl",
-    "imagen": "../img/niños-estuche.jpg",
+    "imagen": "/img/niños-estuche.jpg",
     "descripcion":"estuches para niños",
     "stock":120,
     "categoria":"Niños",

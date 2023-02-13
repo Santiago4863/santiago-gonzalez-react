@@ -12,7 +12,7 @@ const CartProvider = ( {children}) => {
             quantity: quantity,
             categoria: item.categoria,
         }
-        setCart([...item, newProduct])
+        setCart([...items, newProduct])
     }
 
   return (

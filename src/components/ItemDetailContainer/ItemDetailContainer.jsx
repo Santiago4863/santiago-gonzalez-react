@@ -8,7 +8,7 @@ import {getSingleItem} from '../../services/mockService'
 
 export default function ItemDetailContainer() {
   const {addItem} = useContext (cartContext);
-  const [items,setItem] = useState([]);
+  const [item,setItem] = useState([]);
   const [contador, setContador] = useState(1);
   const stock = 500;
 
@@ -20,18 +20,18 @@ export default function ItemDetailContainer() {
   return (
     <div className='totalCards'>
       <div className='cardUnidad'>
-      <p className='titleProduct'>{items.titulo}</p>
-      <img className='imgProduct' src={items.imagen} alt={items.titulo}/>
-      <p className='descriptionProduct'>{items.descripcion}</p>
-      <p className='stockProduct'>Stock Disponible: {items.stock}</p>
-      <p className='priceProduct'>{items.precio}</p>
+      <p className='titleProduct'>{item.titulo}</p>
+      <img className='imgProduct' src={item.imagen} alt={item.titulo}/>
+      <p className='descriptionProduct'>{item.descripcion}</p>
+      <p className='stockProduct'>Stock Disponible: {item.stock}</p>
+      <p className='priceProduct'>{item.precio}</p>
       <ItemCount>
         contador={contador}
         actualizaValor={setContador}
         stock={stock}
         </ItemCount>
       </div>
-      <button onClick={() => addItem(items, contador)}>Agregar a Carrito</button>
+      <button onClick={() => addItem(item, contador)}>Agregar a Carrito</button>
     </div>
   );
 }

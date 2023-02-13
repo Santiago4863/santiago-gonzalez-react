@@ -21,7 +21,7 @@
     height: 60%;
     transition: transform 0.5s;
 }
-.imgProduct:hover{
+.cardUnidad:hover{
     transform: scale(1.1);
 }
 .titleProduct{
@@ -42,4 +42,14 @@
 }
 .stockProduct{
     font-weight: 900;
+}
+
+.detalle{
+    text-decoration: none;
+    list-style-type: none;
+    color: #000;
+}
+
+.detalle:hover{
+    font-size: 1.1rem;
 }

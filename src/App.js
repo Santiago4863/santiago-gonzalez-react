@@ -14,8 +14,8 @@ function App() {
   }
   return (
     <>
-      <BrowserRouter>
       <CartProvider>
+      <BrowserRouter>
 
         <div className='App-header'>
           <Navbar/>
@@ -28,7 +28,7 @@ function App() {
           <ItemListContainer/>
         </div>}/>
 
-        <Route path='/category/:category' element={
+        <Route path='/categoria/:categoria' element={
         <div className='Container'>
           <ItemListContainer/>
         </div>}/>
@@ -41,8 +41,8 @@ function App() {
 
         <Route path='*' element={<h1>404: Recurso no encontrado</h1>}/>
       </Routes>
-          </CartProvider>
       </BrowserRouter>
+          </CartProvider>
     </>
   );
 }
