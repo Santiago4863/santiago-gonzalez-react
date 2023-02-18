@@ -20,7 +20,7 @@ function App() {
         <div className='App-header'>
           <Navbar/>
         </div>
-        <h1 style={styleTitulo}>Productos Mas Vendidos de la Semana</h1>
+        <h1 style={styleTitulo}>Todos los productos</h1>
       <Routes>
 
         <Route path='/' element={

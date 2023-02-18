@@ -8,7 +8,7 @@ export default function ItemList(props) {
   
   return (
     <div className='cardUnidad'>
-        <img className='imgProduct' src={props.imagen} alt="lentes" />
+        <img className='imgProduct' src={`/img/${props.imagen}`} alt="lentes" />
         <p className='titleProduct'>{props.titulo}</p>
         <p className='priceProduct'>$ {props.precio}</p>
         <Link to={urlDetail} className='detalle'>Ver Detalle</Link>

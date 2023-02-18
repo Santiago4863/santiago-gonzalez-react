@@ -1,37 +1,60 @@
-import React, {useState , useEffect, useContext} from 'react'
+import React, {useEffect,} from 'react'
 import '../ItemListContainer/ItemListContainer.css'
-import { cartContext } from '../../context/cartContext'
-/*import ItemDetail from './ItemDetail';*/
-import ItemCount from '../ItemCount/ItemCount'
+import ItemDetail from './ItemDetail';
 import { useParams } from 'react-router-dom'
-import {getSingleItem} from '../../services/mockService'
+import { useState } from 'react';
+
+import {getFirestore, getDoc, doc } from 'firebase/firestore'
 
 export default function ItemDetailContainer() {
-  const {addItem} = useContext (cartContext);
-  const [item,setItem] = useState([]);
-  const [contador, setContador] = useState(1);
-  const stock = 500;
+  
+  const [singleProduct, setSingleProduct] = useState({})
+  let {id} = useParams();
 
-  let id = useParams().id;
-  useEffect(()=>{
-    getSingleItem(id).then((respuesta)=> setItem(respuesta))
+const getProducts = () => {
+  const db = getFirestore()
+  const querySnapshot = doc(db, "items", id)
 
+
+  getDoc(querySnapshot)
+  .then((response) => {
+    console.log(response.id);
+    console.log(response.data());
+    setSingleProduct({id: response.id, ...response.data()})
   })
+  .catch((error) => {console.log(error);})
+}
+
+
+
+  
+  useEffect(()=>{
+   getProducts()
+
+  }, [])
   return (
+    <div>
+
+      <ItemDetail props={singleProduct} />
+    </div>
+    );
+
+
+    /*
     <div className='totalCards'>
       <div className='cardUnidad'>
       <p className='titleProduct'>{item.titulo}</p>
-      <img className='imgProduct' src={item.imagen} alt={item.titulo}/>
+      <img className='imgProduct' src={`/img/${item.imagen}`} alt={item.titulo}/>
       <p className='descriptionProduct'>{item.descripcion}</p>
       <p className='stockProduct'>Stock Disponible: {item.stock}</p>
       <p className='priceProduct'>{item.precio}</p>
       <ItemCount>
         contador={contador}
         actualizaValor={setContador}
-        stock={stock}
+        stock={item.stock}
         </ItemCount>
       </div>
       <button onClick={() => addItem(item, contador)}>Agregar a Carrito</button>
     </div>
-  );
+    */
 }
