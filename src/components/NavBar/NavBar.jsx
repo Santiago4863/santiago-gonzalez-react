@@ -7,15 +7,17 @@ function Navbar() {
     <>
       
       <nav className='nav'>
-        <Link to="/" className='NombreLogo'><p>Valkeem</p></Link>
-        <ul className='padreLinks'>
-          <Link to="/" className='ancorNav'>Inicio</Link>
-          <Link to="/categoria/Hombre" className='ancorNav'>Hombre</Link>
-          <Link to="/categoria/Mujer" className='ancorNav'>Mujer</Link>
-          <Link to="/categoria/Niños" className='ancorNav'>Niños</Link>
-        </ul>
-        <CartWidget/>
-      </nav>
+  <Link to="/" className='NombreLogo'>Valkeem</Link>
+  <ul className='padreLinks'>
+    <li><Link to="/" className='ancorNav'>Inicio</Link></li>
+    <li><Link to="/categoria/Hombre" className='ancorNav'>Hombre</Link></li>
+    <li><Link to="/categoria/Mujer" className='ancorNav'>Mujer</Link></li>
+    <li><Link to="/categoria/Niños" className='ancorNav'>Niños</Link></li>
+  </ul>
+  <Link to="/cart">
+  <CartWidget/>
+  </Link>
+</nav>
     </>
   )
 }

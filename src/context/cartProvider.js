@@ -1,6 +1,5 @@
 import { cartContext } from "./cartContext";
 import { useState } from "react";
-import items from "../data/item";
 
 const CartProvider = ( {children}) => {
     const [cart, setCart] = useState([])
@@ -12,7 +11,7 @@ const CartProvider = ( {children}) => {
             quantity: quantity,
             categoria: item.categoria,
         }
-        setCart([...items, newProduct])
+        setCart([...cart, newProduct])
     }
 
   return (

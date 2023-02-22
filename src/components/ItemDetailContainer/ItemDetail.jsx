@@ -12,7 +12,8 @@ export default function ItemDetail({props}) {
 
   return (
 
-    
+    <div className='cardFlex'>
+
     <div className='cardUnidad'>
         <h2 className='titleProduct'>{props.titulo}</h2>
         <img className='imgProduct' src={`/img/${props.imagen}`} alt="lentes" />
@@ -26,11 +27,9 @@ actualizaValor={setContador}
 stock={props.stock}
 </ItemCount>
 <div>
-<button onClick={() => addItem(props, contador)}>Agregar a Carrito {''}</button>
+<button onClick={() =>addItem(props, contador)}>Agregar a Carrito {''}</button>
 </div>
+    </div>
     </div>
   )
 }
-
-        /*
-        */

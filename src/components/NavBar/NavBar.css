@@ -34,6 +34,20 @@
 .NombreLogo:hover{
     transform: scale(1.3);
 }
+
+.contenedorCarrito{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
 .imgCarrito{
-    height: 30px;
+    height: 45px;
+}
+
+.numero{
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
 }

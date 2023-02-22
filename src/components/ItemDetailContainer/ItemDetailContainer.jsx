@@ -40,21 +40,5 @@ const getProducts = () => {
     );
 
 
-    /*
-    <div className='totalCards'>
-      <div className='cardUnidad'>
-      <p className='titleProduct'>{item.titulo}</p>
-      <img className='imgProduct' src={`/img/${item.imagen}`} alt={item.titulo}/>
-      <p className='descriptionProduct'>{item.descripcion}</p>
-      <p className='stockProduct'>Stock Disponible: {item.stock}</p>
-      <p className='priceProduct'>{item.precio}</p>
-      <ItemCount>
-        contador={contador}
-        actualizaValor={setContador}
-        stock={item.stock}
-        </ItemCount>
-      </div>
-      <button onClick={() => addItem(item, contador)}>Agregar a Carrito</button>
-    </div>
-    */
-}
+  }
+  
