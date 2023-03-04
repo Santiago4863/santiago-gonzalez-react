@@ -5,20 +5,45 @@ const CartProvider = ( {children}) => {
     const [cart, setCart] = useState([])
 
     const addItem = (item, quantity ) => {
-        const newProduct = {
-            titulo: item.titulo,
-            precio: item.precio,
-            quantity: quantity,
-            categoria: item.categoria,
+      let newCart
+      let product = cart.find((prod) => prod.id === item.id)
+      if(product) {
+        product.quantity += quantity
+        if(product.quantity > product.stock){
+          alert('no hay stock disponible')
+          return
         }
-        setCart([...cart, newProduct])
+        newCart = [...cart]
+      } else{
+        product = {
+          id: item.id,
+          titulo: item.titulo,
+          precio: item.precio,
+          quantity: quantity,
+          descripcion: item.descripcion,
+          categoria: item.categoria,
+          imagen: item.imagen,
+          stock: item.stock,
+        }
+        newCart = [...cart, product]
+      }
+      setCart(newCart)
+    }   
+
+    const removeItem = (productId) => {
+      setCart(cart.filter((product) => product.id !== productId))
     }
 
-  return (
-    <cartContext.Provider value = {{cart, addItem}}>
+    const clear = () => {
+      setCart([])
+    }
+
+      
+    return (
+      <cartContext.Provider value = {{cart, addItem, removeItem, clear}}>
         {children}
         </cartContext.Provider>
   )
 }
-
+  
 export default CartProvider
